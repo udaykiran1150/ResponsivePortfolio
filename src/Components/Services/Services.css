@@ -1,0 +1,147 @@
+.services
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin: 0px 100px;
+}
+.services-tittle
+{
+    position: relative;
+    
+}
+.services-tittle h2{
+   font-size: 40px;
+   padding: 0px 30px;
+   font-weight: 600;
+}
+.services-tittle img{
+     position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1; 
+    width: 120px;  
+    
+}
+
+.services-formate
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    padding: 10px 20px;
+    transition: 0.4s;
+}
+.services-container
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:10px;
+    margin-bottom: 40px;
+}
+.services-formate h3{
+    font-weight: 24px;
+    font-weight: 600;
+   
+}
+.services-formate h2{
+    font-size: 30px;
+    font-weight: 600;
+    background: linear-gradient(278deg,#DF8908 40%,#B415FF 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+}
+.services-formate p{
+  font-size: 20px;
+  line-height: 30px;
+  max-width:300px ;
+  color: #d4d4d4;
+}
+.services-read-more
+{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    
+}
+.services-formate:hover
+{
+    background-image: linear-gradient(45deg,#3f0028,#582300);
+    border: 2px sold #ff00ff00;
+    transform: scale(1.05);
+    transition: 0.5s;
+    
+}
+
+@media (max-width:768px) {
+    .services{
+        margin: 20px 80px;
+        align-items:flex-start ;
+        gap: 40px;
+        
+    }
+    .services-tittle h1
+    {
+        padding: 0;
+        font-size: 40px;
+    }
+    .services-tittle img
+    {
+        width: 120px;
+        right: -20px;
+    }
+    .services-formate
+    {
+        gap: 20px;
+        padding: 25px;
+    }
+    .services-formate h2
+    {
+         font-size: 20px;
+         
+    }
+    .services-formate p
+    {
+        font-size: 16px;
+        line-height: 30px;
+        max-width: 300px;
+    }
+    .services-read-more img
+    {
+         width: 20px;
+    }
+    .services-container
+    {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    
+}
+
+@media (max-width:480px) {
+    .services{
+        
+        
+        margin: 10px 50px;
+        width:500px ;
+        
+    }
+     .services-tittle img
+    {
+        width: 100px;
+        
+    }
+    .services .services-tittle h2 
+    {
+        font-size: 30px;
+        
+    }    
+}
