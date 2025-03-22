@@ -28,20 +28,20 @@ const NavBar = () => {
         <h1 className='logo'>uday</h1>
         <img src={theme} alt="" />
         </div>
-        
+         
         <img src={menu_open} className='nav-mob-open' alt="" onClick={menuOpen}/>
         
         <ul type='none' className="nav-menu" ref={menuRef}>
-          <img src={menu_close} alt=""  className='nav-mob-close' onClick={menuClose}/>
+        <img src={menu_close} alt=""  className='nav-mob-close' onClick={menuClose}/>
             <li><AnchorLink className='anchor-link'  href='#home'><p onClick={()=>setMenu('home')}>Home</p></AnchorLink><img src={menu==='home'? underLine:<></>} alt="" /></li>
             <li><AnchorLink className='anchor-link' offset={50} href='#about'> <p onClick={()=>setMenu('aboutme')}>About Me</p></AnchorLink><img src={menu==='aboutme'? underLine:<></>} alt="" /></li>
             <li><AnchorLink className='anchor-link' offset={50} href='#services'><p onClick={()=>setMenu('services')}>services</p></AnchorLink><img src={menu==='services'? underLine:<></>} alt="" /></li>
             <li><AnchorLink className='anchor-link' offset={50} href='#mywork'><p onClick={()=>setMenu('mywork')}>mywork</p></AnchorLink><img src={menu==='mywork'? underLine:<></>} alt="" /></li>
             <li><AnchorLink className='anchor-link' offset={50} href='#contact'><p onClick={()=>setMenu('contact')}>Contact</p></AnchorLink><img src={menu==='contact'? underLine:<></>} alt="" /></li>
+
         </ul>
      
         
-        <div className="nav-connect"><AnchorLink className='anchor-link' offset={50} href='#contact'> Connect with me</AnchorLink></div>
         </div>
   ) 
 }

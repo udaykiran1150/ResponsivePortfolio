@@ -1,7 +1,7 @@
 import React from 'react'
 import './Hero.css'
+import portfolioImg from '../../assets/my-removebg-preview.png';
 
-import portfolioImg from '../../assets/myprofileimg.jpeg';
 
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 const Hero = () => {
@@ -12,7 +12,8 @@ const Hero = () => {
         <p>Passionate Full Stack Developer skilled in building scalable web applications with modern technologies.</p>
         <div className="hero-action">
             <div className="hero-connect"><AnchorLink className='anchor-link' offset={50} href='#contact'>connect with me</AnchorLink></div>
-            <div className="hero-resume">My resume</div>
+            <div className="hero-resume"><a href="/P.SAI UDAY KIRAN Resume.pdf" download="uday's Resume.pdf">Myresume</a></div>
+            
 
         </div>
     </div>

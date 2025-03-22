@@ -2,7 +2,7 @@ import React from 'react'
 import './About.css'
 import theme from '../../assets/theme_pattern.svg'
 // import profile from '../../assets/about_profile.svg'
-import profile from '../../assets/myprofileimg.jpeg';
+import profile from '../../assets/my-removebg-preview.png';
 
 const About = () => {
   return (
@@ -22,10 +22,11 @@ const About = () => {
                     <p>Passionate about building efficient, scalable web applications with seamless user experiences. Experienced in front-end and back-end development, database management, and API integration. Always eager to learn and adapt to new technologies.</p>
                     </div>
                 <div className="about-skills">
-                    <div className="about-skill"><p>HTML &CSS </p><hr style={{width:'50%'}}/></div>
                     <div className="about-skill"><p>React JS </p><hr style={{width:'60%'}}/></div>
                     <div className="about-skill"><p>Node JS </p><hr style={{width:'70%'}}/></div>
                     <div className="about-skill"><p>Express JS </p><hr style={{width:'80%'}}/></div>
+                    <div className="about-skill"><p>Mongo Db and Sql </p><hr style={{width:'50%'}}/></div>
+
                 </div>
             </div>
         </div>

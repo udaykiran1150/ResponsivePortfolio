@@ -5,13 +5,19 @@
     gap: 25px;
     flex-direction: column;
 }
-.hero .hero-img{
+
+.hero .hero-img {
     margin-top: 50px;
-    border-radius: 50px;
+    border-radius: 50%; 
     height: 200px;
     width: 200px;
-
+    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.6);
+    object-fit: cover; 
+    display: block;
+    background: transparent; 
 }
+
+
 .hero h1{
     text-align: center;
     font-size: 60px;
@@ -51,6 +57,10 @@
     padding: 20px 40px;
     border: 2px solid #fff;
     border-radius: 50px;
+}
+.hero-resume a{
+    text-decoration: none;
+    color: white;
 }
 .hero-connect:hover{
     border: 2px solid #fff;

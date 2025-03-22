@@ -23,7 +23,8 @@ const Mywork = () => {
                
         </div>
         <div className="mywork-showmore">
-                       <p>show more</p>
+                
+                       <p><a href="https://github.com/udaykiran1150?tab=repositories">Go to Git Hub</a></p>
                        <img src={arrow} alt="" />
               </div>
     </div>
