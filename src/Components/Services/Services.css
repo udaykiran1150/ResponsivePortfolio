@@ -5,7 +5,10 @@
     justify-content: center;
     align-items: center;
     gap: 60px;
-    margin: 0px 100px;
+    margin: 30px auto;
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 20px;
 }
 .services-tittle
 {
@@ -41,7 +44,7 @@
 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap:10px;
+    gap: 24px;
     margin-bottom: 40px;
 }
 .services-formate h3{
@@ -126,22 +129,59 @@
     
 }
 
-@media (max-width:480px) {
-    .services{
-        
-        
-        margin: 10px 50px;
-        width:500px ;
-        
+@media (max-width: 1200px) {
+    .services-container {
+        grid-template-columns: 1fr 1fr;
     }
-     .services-tittle img
-    {
-        width: 100px;
-        
+}
+
+@media (max-width: 900px) {
+    .services-container {
+        grid-template-columns: 1fr 1fr;
     }
-    .services .services-tittle h2 
-    {
-        font-size: 30px;
-        
-    }    
+    .services {
+        gap: 30px;
+    }
+    .services-tittle h2 {
+        font-size: 28px;
+        padding: 0 10px;
+    }
+    .services-tittle img {
+        width: 90px;
+    }
+}
+
+@media (max-width: 600px) {
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+    .services {
+        gap: 20px;
+        padding: 0;
+    }
+    .services-tittle h2 {
+        font-size: 22px;
+        padding: 0 5px;
+    }
+    .services-tittle img {
+        width: 70px;
+    }
+}
+
+/* Remove fixed width and large margins for .services on small screens */
+@media (max-width: 480px) {
+    .services {
+        margin: 5px;
+        width: 100%;
+        gap: 10px;
+        padding: 0;
+    }
+    .services-tittle img {
+        width: 50px;
+        right: 0;
+    }
+    .services-tittle h2 {
+        font-size: 18px;
+        padding: 0 2px;
+    }
 }

@@ -6,7 +6,7 @@ import mywork_data from '../../assets/mywork_data'
 import './Mywork.css'
 const Mywork = () => {
   return (
-    <div  id='mywork' className='mywork'>
+    <div id='home' className='hero' style={{paddingLeft: "12px"}}>
         
         <div className="mywork-tittle">
             <h2> My work</h2>
